@@ -1,6 +1,6 @@
 # 24 Points card game
 
-![24 Points card game](https://github.com/BojanSof/24-Points-Card-Game/images/screenshot1.png "Screenshot of the game")
+![24 Points card game](https://github.com/BojanSof/24-Points-Card-Game/blob/master/images/screenshot1.png "Screenshot of the game")
 
 24 Points card game is recreation of the [24 Game](https://en.wikipedia.org/wiki/24_Game), fully playable, also including solution finder, which can find all of the solutions for the given cards. How to play menu is also included.
 # Getting Started
