@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.HowToUIController">
+   <top>
+      <Label fx:id="lblInstructions" text="The goal of the 24 Point game is simple. You are given 4 cards. Each card has a value (values of the cards are listed below). Your task is to combine these values with arithmetic operators (+, -, *, /) and parentheses to get the number 24.&#10;Enter your expression in the text field next to the &quot;Enter an expression: &quot; label, and press the &quot;Verify&quot; button. If you can't find a solution, press the &quot;Find Solution&quot; button and the computer will find all the solutions, which can be displayed one at a time (just press the &quot;Find Solution&quot; button again). To get new set of cards, just press the &quot;Shuffle&quot; button.&#10;But remember, not every set of cards leads to a solution (just enter &quot;no solutions&quot; if you found such set of number) :)&#10;" textAlignment="JUSTIFY" wrapText="true" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></Label>
+   </top>
+   <center>
+      <TableView fx:id="tvCardValues" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" />
+         </padding>
+         <columns>
+            <TableColumn fx:id="tcCard" editable="false" maxWidth="300.0" minWidth="200.0" prefWidth="250.0" resizable="false" sortable="false" text="Card" />
+            <TableColumn fx:id="tcValue" editable="false" maxWidth="300.0" minWidth="200.0" prefWidth="249.0" resizable="false" sortable="false" text="Value" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </center>
+</BorderPane>
