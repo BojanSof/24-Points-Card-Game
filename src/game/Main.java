@@ -13,7 +13,7 @@ public class Main extends Application {
 		Parent root = FXMLLoader.load(getClass().getResource("UI.fxml"));
 		Scene scene = new Scene(root);
 		primaryStage.setScene(scene);
-		primaryStage.setTitle("24-Point Card Game");
+		primaryStage.setTitle("24 Points Card Game");
 		primaryStage.show();
 		primaryStage.setResizable(false);
 	}
